@@ -1,46 +1,55 @@
+# **LeeTube - Chrome & Edge Extension**
 
-LeeTube - Chrome Extension
+![LeeTube](path-to-your-image/LeeTube.png)
 
-LeeTube is a Chrome and Edge extension designed to enhance your LeetCode problem-solving experience by fetching relevant solution videos from YouTube. With this extension, you can easily find and watch video tutorials to better understand and solve coding problems.
+[**LeeTube**](https://microsoftedge.microsoft.com/addons/detail/pccgfnamgkmhbohiekhmadealliamihg) is a browser extension designed to enhance your **LeetCode** problem-solving experience by fetching relevant solution videos from **YouTube**. With this extension, you can easily find and watch video tutorials that help you solve coding problems more effectively.
 
-Features
-Fetch YouTube Videos: Automatically fetches solution videos for LeetCode problems based on problem names.
-One-Click Access: Get instant access to video solutions while browsing LeetCode problems.
-Seamless Integration: Works directly within the LeetCode environment, so you don't have to switch tabs.
-How It Works
-Install the extension from the Microsoft Edge Add-ons Store.
-Open any LeetCode problem.
-The extension will automatically find solution videos for the current problem.
-Click on the video link to watch the tutorial.
-Installation
-Microsoft Edge
-Visit the Microsoft Edge Add-ons.
-Click on the Get button to install the extension.
-Google Chrome
-Download the extension from the source code.
-Navigate to chrome://extensions/.
-Enable Developer mode.
-Click Load unpacked and select the folder where the source code is located.
-Usage
-Once installed, the extension will automatically activate when you visit LeetCode problem pages.
-A pop-up or side panel will display YouTube video recommendations for the current problem.
-Development
+---
+
+## **Features**
+
+- 🎥 **Fetch YouTube Videos**: Automatically retrieves solution videos for LeetCode problems based on problem names.
+- ⚡ **One-Click Access**: Instantly get access to solution videos while browsing LeetCode problems.
+- 🌐 **Seamless Integration**: Works within the LeetCode environment, eliminating the need to switch tabs.
+
+---
+
+## **How It Works**
+
+1. Install the extension from the [Microsoft Edge Add-ons Store](https://microsoftedge.microsoft.com/addons/detail/pccgfnamgkmhbohiekhmadealliamihg).
+2. Open any LeetCode problem.
+3. The extension will automatically fetch solution videos for the problem you're viewing.
+4. Click on the video link to start watching.
+
+---
+
+## **Installation**
+
+### **For Microsoft Edge**
+
+1. Visit the [Microsoft Edge Add-ons Store](https://microsoftedge.microsoft.com/addons/detail/pccgfnamgkmhbohiekhmadealliamihg).
+2. Click **Get** to install the extension.
+
+### **For Google Chrome**
+
+1. Download the source code of the extension.
+2. Navigate to `chrome://extensions/` in your Chrome browser.
+3. Enable **Developer mode**.
+4. Click **Load unpacked** and select the folder containing the source code.
+
+---
+
+## **Usage**
+
+1. Once installed, the extension automatically activates on **LeetCode** problem pages.
+2. It will display recommended **YouTube** solution videos in a pop-up or side panel.
+
+---
+
+## **Development**
+
 To run the extension locally:
 
-Clone this repository:
-bash
-Copy code
-git clone https://github.com/your-username/leetube.git
-Open Google Chrome or Microsoft Edge and enable Developer mode in the extensions settings.
-Load the unpacked folder into your browser.
-Test it on LeetCode.
-Future Improvements
-Add support for more programming problem websites (like HackerRank, Codeforces).
-Enhance video search algorithms for more accurate solutions.
-Improve the UI/UX for a smoother experience.
-Contributing
-Feel free to fork this repository, submit a pull request, or open issues for any bugs you encounter or features you would like to see.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/leetube.git
