@@ -1,6 +1,6 @@
 # **LeeTube - Chrome & Edge Extension**
 
-![LeeTube](path-to-your-image/LeeTube.png)
+![LeeTube](/yt.png)
 
 [**LeeTube**](https://microsoftedge.microsoft.com/addons/detail/pccgfnamgkmhbohiekhmadealliamihg) is a browser extension designed to enhance your **LeetCode** problem-solving experience by fetching relevant solution videos from **YouTube**. With this extension, you can easily find and watch video tutorials that help you solve coding problems more effectively.
 
