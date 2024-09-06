@@ -52,4 +52,4 @@ To run the extension locally:
 
 1. Clone this repository:
    ```bash
-   git clone [https://github.com/your-username/leetube.git](https://github.com/Narasimha-png/LeeTube)
+   git clone https://github.com/Narasimha-png/LeeTube
