@@ -15,21 +15,55 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
                 sendResponse({ error: "No active tab found." });
             }
         });
-        return true;
+        return true; 
     }
-    if(message.action == 'getsearchres'){
-        console.log(message.data) ;
-        let data = encodeURIComponent(message.data ) ;
-        let results = message.results;
-        let url = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${data}&maxResults=${results}&type=video&key=AIzaSyC6JePNoKRH-51S8F94kr-fK_ci49qdZtA`;
-        fetch(url).then(responce =>responce.json()).then(data=>{
-          //  console.log(data.items) ;
-            sendResponse({data:data.items}) ;
-        }) ;
-        return true ;
+
+    if (message.action === 'getsearchres') {
+        searchvideo(message, sendResponse);
+        return true; 
     }
-    if( message.action == 'opentab'){
-        console.log("URL " + message.url) ;
-        chrome.tabs.create({url:message.url}) ;
+
+    if (message.action === 'opentab') {
+        console.log("URL " + message.url);
+        chrome.tabs.create({ url: message.url });
     }
 });
+
+async function searchvideo(message, sendResponse) {
+    console.log(message.data);
+    let data = encodeURIComponent(message.data);
+    let results = message.results;
+
+    var res = null;
+    var apikeys = [
+        'AIzaSyABZSNjp9YmRm-VxFt4tPAqJW41Aom96xA',
+        'AIzaSyDQwLTLfrHU6_zTpqo8AcJMAZz8yi9Jtj8',
+        'AIzaSyBn1BOThLhmtx9aCR9FjopnMfgv1OFIJmQ',
+        'AIzaSyC6JePNoKRH-51S8F94kr-fK_ci49qdZtA'
+    ];
+    var ind = 0;
+
+    while (ind < apikeys.length && res === null) {
+        var key = apikeys[ind];
+        let url = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${data}&maxResults=${results}&type=video&key=${key}`;
+        console.log(url);
+
+        try {
+            let response = await fetch(url);
+            let jsonData = await response.json();
+            if (jsonData.items) {
+                res = jsonData.items;
+                let results = "" ;
+                sendResponse({ data: res, results:results });
+                return; 
+            }
+        } catch (error) {
+            console.error("Error fetching data:", error);
+        }
+
+        ind++;
+    }
+    if (res === null) {
+        sendResponse({ error: "No results found or API key limit exceeded." });
+    }
+}
