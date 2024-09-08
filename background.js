@@ -36,10 +36,10 @@ async function searchvideo(message, sendResponse) {
 
     var res = null;
     var apikeys = [
-        'AIzaSyABZSNjp9YmRm-VxFt4tPAqJW41Aom96xA',
-        'AIzaSyDQwLTLfrHU6_zTpqo8AcJMAZz8yi9Jtj8',
-        'AIzaSyBn1BOThLhmtx9aCR9FjopnMfgv1OFIJmQ',
-        'AIzaSyC6JePNoKRH-51S8F94kr-fK_ci49qdZtA'
+        '',
+        '',
+        '',
+        ''
     ];
     var ind = 0;
 
