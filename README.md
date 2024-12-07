@@ -50,6 +50,6 @@
 
 To run the extension locally:
 
-1. Clone this repository:
+1. Clone this repository :
    ```bash
    git clone https://github.com/Narasimha-png/LeeTube
