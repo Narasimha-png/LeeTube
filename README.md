@@ -23,7 +23,7 @@
 
 ---
 
-## **Installation**
+## **Installation process**
 
 ### **For Microsoft Edge**
 
